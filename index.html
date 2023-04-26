@@ -1,34 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+
   <title>Frontend Mentor | Ping coming soon page</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
   </style>
 </head>
+
 <body>
+  <header>
+    <img src="./images/logo.svg">
+    <h2>We are launching <strong>soon!</strong></h2>
+  </header>
 
-  We are launching soon!
+  <main class="container">
+    <h5>Subscribe and get notified</h5>
 
-  Subscribe and get notified
+    <form class="notify">
+      <input type="email" placeholder="Your email address..." id="mail">
 
-  Notify Me
+      <button class="btn">Notify Me</button>
+    </form>
+    <div class="dashboard">
+      <img src="./images/illustration-dashboard.png" alt="dashboard unable to load" class="board">
+    </div>
+  </main>
 
-  &copy; Copyright Ping. All rights reserved.
-
-  <footer>
-    <p class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Sanjeet Rai</a>.
-    </p>
+  <footer class="social-media">
+    <div class="icons">
+      <div>facebook</div>
+      <div>Tweeter</div>
+      <div>Instagram</div>
+    </div>
+    <div class="copyright">
+      <p>&copy; Copyright Ping. All rights reserved.</p>
+    </div>
   </footer>
+
 </body>
+
 </html>
