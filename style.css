@@ -70,8 +70,6 @@ h5 {
     font-size: 14px;
     margin-top: 0.7rem;
 }
-
-
 .notify {
     display: flex;
     flex-direction: row;
@@ -88,9 +86,23 @@ input[type='email'] {
     margin-left: 1.2rem;
     padding-left: 1rem;
     opacity: 0.6;
+}
+input[type='email']:focus{
+    font-weight:600;
+    color:va(--Very-Dark-Blue);
+    font-size:13px;
+    font-family:'Libre Franklin';
+}
+.form-control>#error-msg{
+    font-size:small;
+    margin-left:3rem;
+    visibility:hidden;
+    color:var(--Light-Red);
+}
+.form-control.error > #error-msg{
+    visibility:visible;
 
 }
-
 .btn {
     text-align: center;
     height: 2.5rem;
@@ -99,7 +111,10 @@ input[type='email'] {
     color: #ffffff;
     border-radius: 30px;
     background-color: var(--Blue);
-    cursor: pointer;
+
+}
+.btn:hover{
+    cursor:pointer;
 }
 
 .dashboard {
@@ -113,7 +128,6 @@ input[type='email'] {
     height: 19rem;
     border-radius: 8px;
 }
-
 .social-media {
     display: flex;
     flex-direction: column;
@@ -128,7 +142,9 @@ input[type='email'] {
     gap: 1.5rem;
     color: var(--Blue);
     font-size: 0.8rem;
+    
 }
+
 
 .social-media>.copyright {
     font-size: 11px;
@@ -145,4 +161,9 @@ input[type='email'] {
     background-color: white;
     padding-top: 10px;
     padding-left: 10px;
+    cursor:pointer;
+}
+.icons > div:hover{
+    background-color:var(--Blue);
+    color:#ffffff;
 }
