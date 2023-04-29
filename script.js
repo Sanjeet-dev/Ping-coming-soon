@@ -31,5 +31,5 @@ function setErrorMsg(input, errormsgs){
     // console.log(formControl);
     const msg = document.getElementById('error-msg');
     formControl.className = "form-control error";
-    msg.innerText = errormsgs;
+    msg.textContent = errormsgs;
 }
